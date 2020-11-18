@@ -483,7 +483,7 @@ Made by [@soimort](https://github.com/soimort), who is in turn powered by :coffe
 
 You can find the [list of all contributors](https://github.com/soimort/you-get/graphs/contributors) here.
 
-
+### 中文下载说明
 you-get基础
 1、安装you-get
 win+ R，输入cmd进入控制台，使用pip install you-get安装you-get。
@@ -509,6 +509,7 @@ python+you-get实现批量化下载
 如果要下载的视频数量很大，一个一个的下载就不是我们码农该完成的任务，我们重来不去做重复的事，这些事呢就交给计算机去完成吧！
 1、单线程下载
 推荐使用它
+### 
 import you_get
 import os
 import time
@@ -542,6 +543,7 @@ if __name__ == '__main__':
 
 2、多线程下载
 并不建议去使用多线程下载，它的速度主要还是与网速有关，不关线程的事
+###
 import you_get
 import os
 import time
@@ -575,14 +577,13 @@ def main():
         thr1 = threading.Thread(target=download, args=(count,each))
         thr1.start()
         thr1.join()
-#         thr2 = threading.Thread(target=download, args=(count,each))        
-#         thr2.start()        
-#         thr2.join()
+         thr2 = threading.Thread(target=download, args=(count,each))        
+         thr2.start()        
+         thr2.join()
             
-
 if __name__ == '__main__':
     make_page()
-    path = "F:\数据分析\深度学习在图像处理中的应用"
+    path = "\home\lvwuwei"
     getMp4(path,urlList)
     main()
     etime = time.time()
