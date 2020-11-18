@@ -572,7 +572,7 @@ def download(count,each):
         
 def make_page():
     for p in range(1,9,1):
-        url = "https://www.bilibili.com/video/av84328746?p=%s"%p
+        url = "https://www.bilibili.com/video/BV1wD4y1o7AS?p=%s"%p
         urlList.append(url)
 
 def main():
@@ -587,7 +587,7 @@ def main():
 
 if __name__ == '__main__':
     make_page()
-    path = "F:\数据分析\深度学习在图像处理中的应用"
+    path = "\home\lvwuwei"  #windwos路径为 "F:\数据分析\深度学习在图像处理中的应用"
     getMp4(path,urlList)
     main()
     etime = time.time()
