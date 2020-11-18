@@ -544,6 +544,7 @@ if __name__ == '__main__':
 2、多线程下载
 并不建议去使用多线程下载，它的速度主要还是与网速有关，不关线程的事
 ###
+
 import you_get
 import os
 import time
@@ -577,15 +578,17 @@ def main():
         thr1 = threading.Thread(target=download, args=(count,each))
         thr1.start()
         thr1.join()
-         thr2 = threading.Thread(target=download, args=(count,each))        
-         thr2.start()        
-         thr2.join()
+        thr2 = threading.Thread(target=download, args=(count,each))        
+        thr2.start()        
+        thr2.join()
             
+
 if __name__ == '__main__':
     make_page()
-    path = "\home\lvwuwei"
+    path = "F:\数据分析\深度学习在图像处理中的应用"
     getMp4(path,urlList)
     main()
     etime = time.time()
     utime = (etime-stime)
     print ("您所下载的全部视频一共使用%s分钟"%utime)
+
