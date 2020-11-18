@@ -490,12 +490,12 @@ win+ R，输入cmd进入控制台，使用pip install you-get安装you-get。
 2、查看视频信息
 在控制台输入you-get -i 视频链接，如：
 you-get -i https://www.bilibili.com/video/av51238267?p=1
-1
+
 在这里插入图片描述
 
 现在我选择第一个分辨率的格式进行下载
 you-get --format=dash-flv https://www.bilibili.com/video/av51238267?p=1
-1
+
 在这里插入图片描述
 
 这样就下载好了，文件默认保存在当前路径，现在的路径为计算机用户名路径下。
@@ -504,7 +504,7 @@ you-get --format=dash-flv https://www.bilibili.com/video/av51238267?p=1
 在参数中带上下载的路劲，它就自动下载到相应的地方了
 路径参数为：- o 路径
 you-get -o F://bilibili --format=dash-flv https://www.bilibili.com/video/av51238267?p=1
-1
+
 python+you-get实现批量化下载
 如果要下载的视频数量很大，一个一个的下载就不是我们码农该完成的任务，我们重来不去做重复的事，这些事呢就交给计算机去完成吧！
 1、单线程下载
